@@ -16,7 +16,7 @@ def main():
     gemini_flash = genai.GenerativeModel("gemini-2.0-flash-exp")
     prompt = ''.join(input)
     response = gemini_flash.generate_content(prompt)
-    print('----- From Gemini 2.0 flash -----')
+    print('----- From Gemini 2.0 Flash -----')
     print(response.text)
 
 
