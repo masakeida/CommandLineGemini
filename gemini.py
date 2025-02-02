@@ -12,11 +12,11 @@ def main():
     GOOGLE_API_KEY = os.environ['GOOGLE_API_KEY']
     genai.configure(api_key=GOOGLE_API_KEY)
 
-    # Use gemini-1.5-flash model
-    gemini_flash = genai.GenerativeModel("gemini-1.5-flash")
+    # Use gemini-2.0-flash model
+    gemini_flash = genai.GenerativeModel("gemini-2.0-flash-exp")
     prompt = ''.join(input)
     response = gemini_flash.generate_content(prompt)
-    print('----- From Gemini 1.5 flash -----')
+    print('----- From Gemini 2.0 flash -----')
     print(response.text)
 
 
